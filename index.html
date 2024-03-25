@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <main>
+        <div class="generator">
+            <h1>Password Generator</h1>
+            <leabel class="password-wrap">
+                <input type="text" id="password" readonly placeholder="Generator a Password">
+                <button class="material-icon" id="copy">content_copy</button>
+
+            </leabel>
+            <label>
+                <samp>password Lenght:</samp>
+                <input type="number" id="Lenght" value="16">
+            </label>
+            <label>
+                <samp>Include Uppercase Letters:</samp>
+                <input type="checkbox" id="Uppercase" checked>
+            </label>
+            <label>
+                <samp>Include Lowercase Letters:</samp>
+                <input type="checkbox" id="Lowercase" checked>
+            </label>
+            <label>
+                <samp>Include Numbers:</samp>
+                <input type="checkbox" id="Number" checked>
+            </label>
+            <label>
+                <samp>Include Symbols:</samp>
+                <input type="checkbox" id="Symbols" checked>
+            </label>
+        
+            <button type="submit" id="generator">Generator password</button>
+        </div>
+    </main>
+
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
